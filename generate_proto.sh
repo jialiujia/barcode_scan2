@@ -32,6 +32,11 @@ done
 
 protoc \
 --dart_out="./lib/gen" \
+"$PROTO_OUT_FILE" \
+--plugin /Users/jiayilun/Develop/FlutterProject/protobuf/protoc_plugin/bin/protoc-gen-dart
+
+protoc \
 --swift_out=./ios/Classes \
-"$PROTO_OUT_FILE"
+"$PROTO_OUT_FILE" \
+--plugin /Users/jiayilun/Develop/IosProject/swift-protobuf/Plugins/protoc-gen-swift
 
